@@ -19,13 +19,13 @@ const blogReducer = (state, action) => {
 	}
 };
 
-const addBlogPost = dispatch => {
+const addBlogPost = (dispatch) => {
 	return () => {
 		dispatch({ type: 'add_blogpost' });
 	};
 };
 
-const deleteBlogPost = dispatch => {
+const deleteBlogPost = (dispatch) => {
 	return id => {
 		dispatch({ type: 'delete_blogpost', payload: id });
 	};
